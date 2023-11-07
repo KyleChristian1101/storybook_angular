@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    }
+    
+    *:focus {
+        outline: none;
+    }
+   
+  
+    
+    body {
+    font-family: Baguette, Century;
+    background-color: rgb(245, 245, 245);
+    padding: 200px;
+    }
+    .login {
+    margin: 20px auto;
+    width: 700px;
+    }
+    .login-screen {
+    background-color: #1be609;
+    padding: 20px;
+    border-radius: 5px
+    }
+    
+    .app-title {
+    text-align: center;
+    color: #777;
+    }
+    
+    .login-form {
+    text-align: left;
+    }
+    .control-group {
+    margin-bottom: 10px;
+    }
+    .border{
+        height: 3px;
+        background: rgba(0, 0, 0, .3);
+        margin: 20px 0;
+        box-shadow: 0px 0px 4px 2px rgba(204,204,204,0.5);
+    }
+
+    .Headings{
+        font-family: Baguette, century;
+        font-size: 2.7rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);;
+        margin: 40px 0px;
+        transform: translate(-0%, -70%);
+    }
+
+    .TextStyle1 {
+        font-family: Baguette, century;
+        font-weight: Bold;
+        margin-left: 5px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .TextStyle2 {
+        font-family: Cambria;
+        font-style: italic;
+        font-weight: bold;
+        margin-left: 5px;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+    }
+    
+    input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+    }
+    
+    .btn {
+      font-family: Lucida Sans;
+      border: 2px solid transparent;
+      background: rgba(12, 120, 8, 0.9);
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 25px;
+      padding: 10px 0;
+      text-decoration: none;
+      text-shadow: none;
+      border-radius: 3px;
+      box-shadow: none;
+      transition: 0.25s;
+      display: block;
+      width: 250px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .btn:hover {
+      background-color: rgba(80, 80, 80, 0.9);;
+    }
+    
+    .login-link {
+      font-size: 12px;
+      color: #444;
+      display: block;
+        margin-top: 12px;
+    }
