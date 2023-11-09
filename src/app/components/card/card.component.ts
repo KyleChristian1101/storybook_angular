@@ -8,5 +8,4 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() name!:string
   @Input() img!:string
-  @Input() price!:number
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { cardData } from 'src/app/data/cardData';
+import { cardData } from 'src/app/data/CardData';
 
 @Component({
   selector: 'app-product',
