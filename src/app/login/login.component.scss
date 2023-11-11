@@ -1,118 +1,109 @@
-* {
-    box-sizing: border-box;
-    }
-    
-    *:focus {
-        outline: none;
-    }
-   
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../../assets/login.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home {
+  color: white;
+  text-align: right;
+  transform: translate(-220px, 0px);
+}
+.wrapper{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
   
-    
-    body {
-    font-family: Baguette, Century;
-    background-color: rgb(245, 245, 245);
-    padding: 200px;
-    }
-    .login {
-    margin: 20px auto;
-    width: 700px;
-    }
-    .login-screen {
-    background-image: url('../../assets/book.jpg');
-    padding: 20px;
-    border-radius: 5px
-    }
-    
-    .app-title {
-    text-align: center;
-    color: #777;
-    }
-    
-    .login-form {
-    text-align: left;
-    }
-    .control-group {
-    margin-bottom: 10px;
-    }
-    .border{
-        height: 3px;
-        background: rgba(0, 0, 0, .3);
-        margin: 20px 0;
-        box-shadow: 0px 0px 4px 2px rgba(204,204,204,0.5);
-    }
+  margin: 30px 0;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #fff;
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
 
-    .Headings{
-        font-size: 2.7rem;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.9);;
-        margin: 40px 0px;
-        transform: translate(-0%, -70%);
-    }
+}
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
 
-    .TextStyle1 {
-        font-family: Baguette, century;
-        font-weight: Bold;
-        margin-left: 5px;
-        font-size: 20px;
-        color: rgba(255, 255, 255, 0.9);
-    }
+}
+.remember-forgot a{
+  color: #fff;
+  text-decoration: none;
 
-    .TextStyle2 {
-        font-family: Cambria;
-        font-style: italic;
-        font-weight: bold;
-        margin-left: 5px;
-        font-size: 15px;
-        color: rgba(255, 255, 255, 0.9);
-    }
-    
-    input {
-    text-align: center;
-    background-color: #ECF0F1;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 200;
-    padding: 10px 0;
-    width: 250px;
-    transition: border .5s;
-    }
-    
-    input:focus {
-    border: 2px solid #3498DB;
-    box-shadow: none;
-    }
-    
-    .btn {
-      font-family: Lucida Sans;
-      border: 2px solid transparent;
-      background: rgba(12, 120, 8, 0.9);
-      color: #ffffff;
-      font-size: 18px;
-      line-height: 25px;
-      padding: 10px 0;
-      text-decoration: none;
-      text-shadow: none;
-      border-radius: 3px;
-      box-shadow: none;
-      transition: 0.25s;
-      display: block;
-      width: 250px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    .btn:hover {
-      background-color: rgba(80, 80, 80, 0.9);;
-    }
-    
-    .login-link {
-      font-size: 12px;
-      color: #444;
-      display: block;
-        margin-top: 12px;
-    }
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
 
-    .log {
-      color: #F1E4B0;
-    }
+}
+.register-link p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover{
+  text-decoration: underline;
+}

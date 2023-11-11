@@ -13,6 +13,7 @@ import { ScreenComponent } from './components/screen/screen.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
