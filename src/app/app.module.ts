@@ -11,12 +11,14 @@ import { TopnavComponent } from './components/topnav/topnav.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ScreenComponent } from './components/screen/screen.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HungerComponent } from './hunger/hunger.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HungerComponent,
   ],
   imports: [
     BrowserModule,

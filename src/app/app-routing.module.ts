@@ -3,11 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {  
-    path: "layout",
+    path: "login",
     loadChildren: () => import('./login/login.module').then(mod => mod.LoginModule),
   },
+  {  
+    path: "hunger",
+    loadChildren: () => import('./hunger/hunger.module').then(mod => mod.HungerModule),
+  },
   {
-    path: "login",
+    path: "layout",
     loadChildren: () => import('./layout/layout.module').then(mod => mod.LayoutModule),
   },
  
