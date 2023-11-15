@@ -12,6 +12,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ScreenComponent } from './components/screen/screen.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HungerComponent } from './hunger/hunger.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -27,6 +29,8 @@ import { HungerComponent } from './hunger/hunger.component';
     LayoutModule,
     RegistrationModule,
     NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
