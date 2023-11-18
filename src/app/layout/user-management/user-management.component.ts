@@ -1,3 +1,5 @@
+// user-management.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-management.component.scss']
 })
 export class UserManagementComponent {
-
+  // Component logic here
 }
