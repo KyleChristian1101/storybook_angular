@@ -41,7 +41,6 @@ export class UserManagementComponent implements OnInit {
 
   getRoles() {
     this.apiService.getRoles().subscribe(res => {
-      console.log(res);
       this.roleData = res;
     });
   }
@@ -103,7 +102,7 @@ export class UserManagementComponent implements OnInit {
     });
   }
   deleteWriter(writer : any){
-    this.apiService.deleteWriter(writer.writer_id)
+    this.apiService.deleteWriter(writer.user_id)
     .subscribe({
       next: (res: any) => {
         alert('User Deleted!');
@@ -116,7 +115,7 @@ export class UserManagementComponent implements OnInit {
   }
 
   getWriter(writer : any){
-    this.apiService.getWriter(writer.writer_id)
+    this.apiService.getWriter(writer.user_id)
     .subscribe({
       next: (res: any) => {
         this.showAdd = false;
@@ -127,7 +126,7 @@ export class UserManagementComponent implements OnInit {
           email: res.email,
           username: res.username,
           password: res.password,
-          id: res.writer_id,
+          id: res.user_id,
           role_id: res.role_id
         });
       }, 

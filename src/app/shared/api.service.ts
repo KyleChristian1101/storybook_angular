@@ -10,45 +10,60 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   postWriter(data: any) {
-    return this.http.post<any>("http://localhost/api/writer/create.php", data)
+    return this.http.post<any>("http://localhost:8085/api/user", data)
       .pipe(map((res: any) => {
-        return res;
+        if(res.status === true) {
+          return res.data;
+        }
+        alert(res.message);
       }));
   }
 
   getWriters() {
-    return this.http.get<any>("http://localhost/api/writer/view.php")
+    return this.http.get<any>("http://localhost:8085/api/user")
       .pipe(map((res: any) => {
-        return res;
+        if(res.status === true) {
+          return res.data;
+        }
+        alert(res.message);
       }));
   }
 
   getRoles() {
-    return this.http.get<any>("http://localhost/api/roles/view.php")
+    return this.http.get<any>("http://localhost:8085/api/role")
       .pipe(map((res: any) => {
-        return res;
+        if(res.status === true) {
+          return res.data;
+        }
+        alert(res.message);
       }));
   }
 
 
   getWriter(id: number) {
-    return this.http.get<any>(`http://localhost/api/writer/view_one.php?writer_id=${id}`)
+    return this.http.get<any>(`http://localhost:8085/api/user/${id}`)
       .pipe(map((res: any) => {
-        return res;
+        if(res.status === true) {
+          return res.data;
+        }
+        alert(res.message);
       }));
   }
 
   updateWriter(data: any, id: number) {
-    return this.http.put<any>(`http://localhost/api/writer/update.php?writer_id=${id}`, data)
+    return this.http.put<any>(`http://localhost:8085/api/user/${id}`, data)
       .pipe(map((res: any) => {
-        return res;
+        if(res.status === true) {
+          return res.data;
+        }
+        alert(res.message);
       }));
   }
 
   deleteWriter(id: number) {
-    return this.http.delete<any>(`http://localhost/api/writer/delete.php?writer_id=${id}`)
+    return this.http.delete<any>(`http://localhost:8085/api/user/${id}`)
       .pipe(map((res: any) => {
-        return res;
+        alert(res.message);
       }));
   }
 }
